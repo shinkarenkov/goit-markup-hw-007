@@ -138,7 +138,18 @@ ul{
     color: var(--title-color);
 }
 
+.main-title {
+    color: var(--standart-wite);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.9
+    letter-spacing: 0.02em;
 
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
 
 /* style header mobil */
 
@@ -152,10 +163,15 @@ ul{
         .mobile-menu-icon{
             fill: #2e2f42;
         }
-        .main-list {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .main-section{
+            margin-right: auto;
+            margin-left: auto;
+            background-color: var(--bcg-color);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; 
+
+            text-align: center;
         }
         
        
@@ -176,17 +192,54 @@ ul{
             margin-right: 16px;
             line-height: 0;
         }
+     
+        .logo{
+            margin-left: 16px;
+            padding: 24px 0px;
+        }
+
+        /* section hero */
+
         .main-list {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-        .logo{
-            margin-left: 16px;
-            padding: 24px 0px;
+        .main-title{
+            max-width: 320px;
+            margin-bottom: 88px;
+        }
+
+        .main-section{
+
+            max-width: 428px;
+            height: 422px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: var(--bcg-color);
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)) , url("../images/hero-mibile-1x.jpg") ;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; 
+
+            text-align: center;
+            padding-top: 112px;
+            padding-bottom: 112px;
+            
         }
 }
-/* style header tablet */
+
+@media screen and (max-width:767px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    
+.main-section{
+                background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-mibile-2x.jpg");
+}
+
+}
+
+/* style tablet */
 
 @media screen and (min-width:768px) {
     .container{
@@ -196,107 +249,198 @@ ul{
         color: var(--title-color);
         border-bottom: 1px solid var(--fotter-text);
     }
+    .mobile-menu-open{
+        display: none;
+    }
+        
+    .site-nav {
+        display: flex;
+           
+    }
+
+    .main-list{
+        display: flex;
+        align-items: center;
+    }
+
+    .main-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site-nav .item:not(:last-child){
+        margin-right: 40px;
+    }
+
+        .nav-link {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+    
+            padding-top: 24px;
+            padding-bottom: 24px;
+    
+            transition: color var(--transform);
+            display: block;
+            position: relative;
+            color: var(--title-color)
+        }
+    
+        .studio {
+            color: #4d5ae5;
+        }
+    
+        .studio::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            display: block;
+    
+            width: 100%;
+            height: 4px;
+            background: var(--button-hover);
+            border-radius: 2px;
+        }
+    
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--button-hover);
+    
+        }
+    
+        .address-link {
+            color: var(--content-color);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+    
+            
+    
+            transition: color var(--transform);
+        }
+    
+        .address-link:hover,
+        .address-link:focus {
+            color: var(--button-hover);
+        }
+        .auth-nav{
+            font-style: normal;
+        }
+        .auth-nav.item:not(:last-child){
+            margin-bottom: 12px;
+        }
+
 }
-/* style header desktop */
+
+@media screen and (max-width:1157px) and (min-width:768px) {
+    .site-nav {
+    margin-left: 120px;
+    }
+        /* section hero */
+
+    .main-title{
+            width: 320px;
+            margin-bottom: 52px;
+    }
+
+    .main-section{
+        max-width: 768px;
+            height: 436px;
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-table-1x.jpg");
+            padding-top: 112px;
+            padding-bottom: 112px;
+
+    }
+}
+
+@media screen and (max-width:1157px) and (min-width:768px) and (min-device-pixel-ratio: 2) , screen and (max-width:1157px) and (min-width:768px) and 
+(min-resolution: 192dpi), screen and (max-width:1157px) and (min-width:768px) and  
+(min-resolution: 2dppx) {
+    .main-section {
+                    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-table-2x.jpg");
+    }
+
+}
+
+/* style desktop */
 
 @media screen and (min-width:1158px) {
 
-.container{
-    width: 1158px;
+        .container{
+            width: 1158px;
+            
+        } 
+
+        .site-nav{
+            margin-left: 76px;
+        }
+
+        .address-link{
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        .auth-nav {
+            font-style: normal;
+            display: flex;
+        }
     
-} 
-    
+        .auth-nav .item:not(:last-child) {
+            margin-right: 40px;
 }
 
+/* section hero */
 
-/* 
+        .main-title{
+            width: 496px;
+            margin-bottom: 48px;
+        }
+        .main-section{
+
+            max-width: 1440px;
+            height: 600px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: var(--bcg-color);
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)) , url("../images/people-office.jpg") ;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; 
+
+            text-align: center;
+            padding-top: 188px;
+            padding-bottom: 188px;
+            
+        }
 
 
+        .section-title {
+        color: var(--title-color);
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            margin-bottom: 72px;
+
+        }
 
 
-
-.site-nav {
-    display: flex;
-    margin-left: 76px;
-}
-
-.site-nav .item:not(:last-child){
-    margin-right: 40px;
-}
-
-.main-list{
-    display: flex;
-    align-items: center;
-}
-
-
-
-.nav-link{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-
-    padding-top: 24px;
-    padding-bottom: 24px;
-    
-    transition: color var(--transform);
-    display: block;
-    position: relative;
-    color: var(--title-color)
-
-}
-
-.studio{
-    color: #4d5ae5;
-}
-
-.studio::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    display: block;
-
-    width: 100%;
-    height: 4px;
-    background: var(--button-hover);
-    border-radius: 2px;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--button-hover);
-    
-}
-
-.auth-nav {
-    font-style: normal;
-    display: flex;
-}
-
-.auth-nav .item:not(:last-child){
-    margin-right: 40px;
-}
-
- .address-link{
-    color: var(--content-color);
-    font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-
-        padding-top: 24px;
-        padding-bottom: 24px;
-
-        transition: color var(--transform);
- }
-
- .address-link:hover,
- .address-link:focus{
-        color: var(--button-hover);
- } */
+    }
+ @media screen and (mix-width:1158px) and (min-device-pixel-ratio: 2),
+        screen and (mix-width:1158px) and
+        (min-resolution: 192dpi),
+        screen and (mix-width:1158px) and
+        (min-resolution: 2dppx) {
+            .main-section {
+                background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-desctop-2x.jpg");
+            }
+        }
 
 /* styles main content */
 
@@ -306,51 +450,6 @@ body {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-}
-.main-section{
-
-    max-width: 1440px;
-    height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: var(--bcg-color);
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)) , url("../images/people-office.jpg") ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; 
-
-    text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    
-}
-.main-title{
-    color: var(--standart-wite);
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em; 
-        
-        display:block;
-        margin-right: auto;
-        margin-left: auto;
-        width: 496px;
-        margin-bottom: 48px;  
-
-
-   
-}
-
-.section-title {
-   color: var(--title-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-
 }
 
 .content-title {
