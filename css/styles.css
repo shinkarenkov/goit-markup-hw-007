@@ -682,15 +682,17 @@ outline: 2px solid var(--button-hover);
 .site-nav {
         display: none;
     }
-
+ .nav-address {
+     display: none;
+ }
     /* ====menu===== */
 .mobile-menu{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 428px;
-    height: 100%;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    
     background-color: var(--standart-wite);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     z-index: 150;
@@ -701,12 +703,75 @@ outline: 2px solid var(--button-hover);
 
     padding-top: 80px;
     padding-left: 40px;
+    padding-bottom: 40px;
    
 }
 
-    .auth-nav {
-        display: none;
-    }
+.mobile-link{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: var(--bcg-color);
+}
+
+.mobile-link:hover,
+.mobile-link:focus{
+    color: var(--button-hover);
+}
+
+.mobile-item:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.mobile-address{
+    margin-top: 284px;
+}
+
+.address-item{
+    margin-bottom: 40px;
+}
+.mobile-fone-link{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    color: var(--bcg-color);
+}
+.mobile-fone-link:hover,
+.mobile-fone-link:focus {
+    color: var(--button-hover);
+}
+
+
+.mobile-email-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--bcg-color);
+}
+.mobile-email-link:hover,
+.mobile-email-link:focus {
+    color: var(--button-hover);
+}
+
+}
+
+.soc-list-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    
+}
+
         .mobile-menu-open {
             background-color: transparent;
             border: none;
@@ -897,9 +962,7 @@ outline: 2px solid var(--button-hover);
                 justify-content: center;
             }
 
-            .soc-footer{
-                margin-top: 72px;
-            }
+           
 
             .form-position{
                 margin-top: 72px;
@@ -1024,6 +1087,7 @@ outline: 2px solid var(--button-hover);
         .address-link:focus {
             color: var(--button-hover);
         }
+
         .auth-nav{
             font-style: normal;
         }
@@ -1094,7 +1158,10 @@ outline: 2px solid var(--button-hover);
         padding-left: 24px;
         padding-right: 24px;
     }
-
+     
+        .mobile-menu{
+            display: none;
+        }
 
 }
 
@@ -1294,7 +1361,9 @@ outline: 2px solid var(--button-hover);
             align-items: center;
             margin-top: 16px;
         }
-        
+        .soc-footer {
+             margin-top: 72px;
+        }
         
 }
 
