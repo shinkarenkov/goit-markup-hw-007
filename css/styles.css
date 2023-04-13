@@ -668,6 +668,27 @@ outline: 2px solid var(--button-hover);
                 padding: 96px 0;
             }
 
+             .content-title{
+
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.1;
+                letter-spacing: 0.02em;
+                color: var(--bcg-color);
+
+                margin-bottom: 8px;
+            }
+
+            .discription-img{
+                font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+
+                    color: var(--content-color);
+                    
+            }
+
             /* ====modal=== */
             
             /* .modal{
@@ -677,9 +698,7 @@ outline: 2px solid var(--button-hover);
 
          
 }
-@media screen and (max-height:796px) {
-    
-}
+
 @media screen and (max-width:767px){
 .site-nav {
         display: none;
@@ -705,6 +724,7 @@ outline: 2px solid var(--button-hover);
     
 }
 .mobile-menu-container{
+    height: 100vh;
    
     padding-top: 80px;
     padding-left: 40px;
@@ -773,8 +793,7 @@ outline: 2px solid var(--button-hover);
 .soc-list-mobile {
     display: flex;
     justify-content: center;
-    gap: 56px;
-    
+    gap:16%;
 }
 
         .mobile-menu-open {
@@ -826,10 +845,16 @@ outline: 2px solid var(--button-hover);
             margin-bottom: 24px;
         }
 
+        .content-title{
+        text-align: center;
+}
  /* =====OUR-WORK====== */
         .our-work{
         display: none;
     }
+
+   
+
         .our-team {
             background-color: var(--fotter-text);
             padding: 96px 0;
@@ -896,6 +921,27 @@ outline: 2px solid var(--button-hover);
         .our-text{
             padding: 32px 16px;
         }
+
+        .content-title{
+
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.1;
+                letter-spacing: 0.02em;
+                color: var(--bcg-color);
+
+                margin-bottom: 8px;
+            }
+
+            .discription-img{
+                font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+
+                    color: var(--content-color);
+                    
+            }
         /* =====customers */
         .customers{
             padding: 96px 0;
@@ -955,9 +1001,11 @@ outline: 2px solid var(--button-hover);
                 margin-right: auto;   
                 margin-left: auto;
             }
-
+            .mobile-logo{
+                margin-bottom: 72px;
+            }
             .section-title-footer{
-                
+                margin-bottom: 16px;
                 text-align: center;
             }
 
@@ -976,9 +1024,7 @@ outline: 2px solid var(--button-hover);
                 margin-right: auto;
                 margin-left: auto;
             }
-            .input-email{
-                margin-top: 16px;
-            }
+           
             .footer-content{
             margin-left: auto;
             margin-right: auto;
@@ -987,8 +1033,23 @@ outline: 2px solid var(--button-hover);
             .modal{
                 width: 392px;
             }
+           
+
+            .descript-list .item:not(:last-child){
+                margin-bottom: 72px ;
+            }
+
             
             
+}
+
+@media screen and (max-width:430px) {
+    .mobile-fone-link {
+        font-size: 24px;
+    }
+    .modal{
+        width: 100%;
+}
 }
 
 @media screen and (max-width:767px) and (min-device-pixel-ratio: 2),
@@ -1167,7 +1228,25 @@ outline: 2px solid var(--button-hover);
         }
 
 }
+@media screen and (max-width:1157px){
+ .our-text .content-title {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 1.2;
+     text-align: center;
+ }
 
+ .our-text .discription-img {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.5;
+     text-align: center;
+     letter-spacing: 0.02em;
+     margin-bottom: 8px;
+
+ }
+}
 @media screen and (max-width:1157px) and (min-width:768px) {
     .site-nav {
     margin-left: 120px;
@@ -1260,6 +1339,7 @@ outline: 2px solid var(--button-hover);
 /* section hero */
 
         .main-title{
+            font-size: 56px;
             width: 496px;
             margin-bottom: 48px;
         }
