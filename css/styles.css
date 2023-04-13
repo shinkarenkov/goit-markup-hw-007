@@ -677,7 +677,9 @@ outline: 2px solid var(--button-hover);
 
          
 }
-
+@media screen and (max-height:796px) {
+    
+}
 @media screen and (max-width:767px){
 .site-nav {
         display: none;
@@ -687,10 +689,11 @@ outline: 2px solid var(--button-hover);
  }
     /* ====menu===== */
 .mobile-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     
+    height: 100%;
     width: 100%;
     
     background-color: var(--standart-wite);
@@ -702,7 +705,7 @@ outline: 2px solid var(--button-hover);
     
 }
 .mobile-menu-container{
-
+   
     padding-top: 80px;
     padding-left: 40px;
     padding-bottom: 40px;
@@ -778,12 +781,10 @@ outline: 2px solid var(--button-hover);
             background-color: transparent;
             border: none;
             padding: 0;
-            margin-right: 16px;
             line-height: 0;
         }
      
         .main-list .logo{
-            margin-left: 16px;
             padding: 24px 0px;
         }
 
